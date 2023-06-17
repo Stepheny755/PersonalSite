@@ -7,7 +7,7 @@ import './style/index.css'
 
 //import NavBar from './layouts/nav'
 //import { NaviBar } from './layouts/navbar'
-//import Footer from './layouts/footer'
+import Footer from './layouts/footer'
 
 import About from './contents/about'
 import Education from './contents/education'
@@ -32,6 +32,7 @@ class Main extends React.Component{
           <Experience/>
           <Projects />
         </div>
+        <Footer />
       </React.Fragment>
     );
   }
