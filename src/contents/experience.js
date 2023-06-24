@@ -4,15 +4,24 @@ import experiences from '../data/experience.json'
 import Card from './card'
 
 class Experience extends React.Component{
-  render_data(x){
+  render_content(x){
     return(
-      <div>
+      <div class="card_body">
         <li key={x.id}>
-          <h4 className="exp_range">{x.start_year} - {x.end_year}</h4>
           <p>{x.description}</p>
         </li>
       </div>
     );
+  }
+  render_subtitle(x){
+    return(
+      <div class="card_st">
+        <h3>
+            <span class="card_st_left">{x.team}</span>
+            <span class="card_st_right">{x.start_year} - {x.end_year}</span>
+          </h3>
+      </div>
+    )
   }
   render(){
     return(
@@ -22,8 +31,9 @@ class Experience extends React.Component{
           {experiences.map(x =>
             <li>
               <Card
-                title = {<h4>{x.team} {x.title} - {x.name}</h4>}
-                content = {this.render_data(x)}
+                title = {<h2>{x.title} - {x.name}</h2>}
+                subtitle = {this.render_subtitle(x)}
+                content = {this.render_content(x)}
               />
             </li>
           )}

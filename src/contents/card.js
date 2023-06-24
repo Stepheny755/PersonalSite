@@ -32,6 +32,7 @@ class Card extends React.Component{
               variants={card_variants}
               transition={{ duration: 0.35}}//, //ease: [0.04, 0.62, 0.23, 0.98] }}
             >
+              {this.props.subtitle}
               {this.props.content}
             </motion.section>
           )}

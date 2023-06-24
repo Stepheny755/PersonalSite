@@ -101,22 +101,22 @@ p{
 }
 
 h1{
-  font-size:5rem;
-  margin:0px;
-}
-
-h2{
   font-size:4rem;
   margin:0px;
 }
 
+h2{
+  font-size:3rem;
+  margin:0px;
+}
+
 h3{
-  font-size:3.5rem;
+  font-size:2rem;
   margin:0px;
 }
 
 h4{
-  font-size:2.75rem;
+  font-size:1.75rem;
   margin:0px;
 }
 
@@ -160,4 +160,30 @@ a, .navbar-nav, .navbar-light .nav-link {
   position: absolute !important;
   left: 25%;
   right: 25%;
+}
+
+footer {
+  position: fixed;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
+}
+
+/* .card_st{
+} */
+
+.card_st_left{
+  float:left;
+}
+
+.card_st_right{
+  float:right;
+}
+
+.card_body{
+  clear:both;
+  position:relative;
 }
