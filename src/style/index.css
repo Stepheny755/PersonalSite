@@ -49,7 +49,7 @@
 }
 
 .title{
-  padding-top: 10px;
+  padding-top: 15px;
   margin-left: calc(100%/20);
 }
 
@@ -121,7 +121,7 @@ h4{
 }
 
 p{
-  font-size:2.5rem;
+  font-size:2.25rem;
   margin: 0px;
 }
 
@@ -175,6 +175,10 @@ footer {
 /* .card_st{
 } */
 
+.card_title{
+  padding-top: 5px;
+}
+
 .card_st_left{
   float:left;
 }
@@ -184,6 +188,7 @@ footer {
 }
 
 .card_body{
+  padding-top: 12px;
   clear:both;
   position:relative;
 }

@@ -6,11 +6,20 @@ import Card from './card'
 class Education extends React.Component{
   render_data(x){
     return(
-    <div>
-      <h4 className="edu_range">{x.start_month} {x.start_year} - {x.end_month} {x.end_year}</h4>
-      <p><i>Relevant Coursework:</i> {x.relevant_coursework}</p>
-    </div>
+      <div class="card_body">
+        <p><i>Relevant Coursework:</i> {x.relevant_coursework}</p>
+      </div>
     );
+  }
+  render_subtitle(x){
+    return(
+      <div class="card_st">
+        <h3>
+          <span class="card_st_left">{x.program}</span>
+          <span class="card_st_right">{x.start_month} {x.start_year} - {x.end_month} {x.end_year}</span>
+        </h3>
+      </div>
+    )
   }
   render(){
     return(
@@ -20,7 +29,8 @@ class Education extends React.Component{
             {education.map(x =>
               <li>
                 <Card
-                  title = {<div><h3 className="edu_school">{x.school}</h3><h4 className="edu_program">{x.program}</h4></div>}
+                  title = {<div><h2 className="edu_school">{x.school}</h2></div>}
+                  subtitle = {this.render_subtitle(x)}
                   content = {this.render_data(x)}
                 />
               </li>

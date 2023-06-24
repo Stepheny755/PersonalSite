@@ -20,7 +20,7 @@ class Card extends React.Component{
     }
     return (
       <div className = "b accordion" onClick={() => this.toggleExpanded()}>
-        {this.props.title}
+        <div class="card_title">{this.props.title}</div>
 
         <AnimatePresence>
           {this.state.expanded && (
