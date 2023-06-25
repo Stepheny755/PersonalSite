@@ -18,7 +18,7 @@ class Experience extends React.Component{
       <div class="card_st">
         <h3>
             <span class="card_st_left">{x.team}</span>
-            <span class="card_st_right">{x.start_year} - {x.end_year}</span>
+            <span class="card_st_right">{x.start_month} {x.start_year} - {x.end_month} {x.end_year}</span>
           </h3>
       </div>
     )
