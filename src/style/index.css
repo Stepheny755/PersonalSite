@@ -172,11 +172,18 @@ footer {
   text-align: center;
 }
 
-/* .card_st{
-} */
+.logo{
+  /* width: 3rem; */
+  height: 3rem;
+  object-fit: fill;
+}
 
 .card_title{
   padding-top: 5px;
+}
+
+.card_st{
+  clear:both;
 }
 
 .card_st_left{
