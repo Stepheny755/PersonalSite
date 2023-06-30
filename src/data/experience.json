@@ -14,6 +14,7 @@
   {
     "id": 2,
     "name": "University of Toronto",
+    "logo": "uoft.png",
     "start_year": "2021",
     "end_year": "2021",
     "start_month": "May",
@@ -25,6 +26,7 @@
   {
     "id": 3,
     "name": "Autoronto",
+    "logo": "autoronto.jpeg",
     "start_year": "2022",
     "end_year": "Present",
     "start_month": "November",
@@ -36,6 +38,7 @@
   {
     "id": 4,
     "name": "UofT Hyperloop Team",
+    "logo": "utht.png",
     "start_year": "2019",
     "end_year": "2023",
     "team": "Pod 2 R&D/Energy Systems",
@@ -43,22 +46,13 @@
     "description": "Part of the Pod II R&D team working on developing Double Sided Linear Induction Motors, Transverse Flux LIMs and Halbach Arrays. Designed FEA simulations using ANSYS Maxwell, Simcenter MagNet, and Finite Element Method Magnetics (FEMM), written in MATLAB and VBS. Co-lead a team of 11 engineers working on continuing research, development, and prototyping of novel linear induction motors. Developed and tested the HV circuit, which consisted of an EMRAX188M motor and Cascadia PM100DX inverter, for Pod I. Constructed the HV battery circuit for Pod I, and conducted safety testing on the HV circuit."
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "IEEE UofT",
     "logo": "ieeeuoft.png",
     "start_year": "2020",
     "end_year": "2022",
     "team": "Tech Team",
     "title": "Advisor",
-    "description": ""
-  },
-  {
-    "id": 1,
-    "name": "UofT Hyperloop Team",
-    "start_year": "2019",
-    "end_year": "Present",
-    "team": "Pod 2 R&D",
-    "title": "LIM Lead",
     "description": ""
   }
 ]

@@ -4,12 +4,17 @@ import education from '../data/education.json';
 import Card from './card'
 
 class Education extends React.Component{
-  render_data(x){
-    return(
-      <div class="card_body">
-        <p><i>Relevant Coursework:</i> {x.relevant_coursework}</p>
+  render_title(x){
+    var img_include = "";
+    if(x.hasOwnProperty('logo')){
+      img_include = <div class="logo"><img src={require("../res/"+x.logo)} alt={x.logo} width="auto" height="100%"/></div>
+    }
+    return (
+      <div>
+        <span class="card_st_left edu_school"><h2>{x.school}</h2></span>
+        <span class="card_st_right">{img_include}</span>
       </div>
-    );
+    )
   }
   render_subtitle(x){
     return(
@@ -21,6 +26,13 @@ class Education extends React.Component{
       </div>
     )
   }
+  render_data(x){
+    return(
+      <div class="card_body">
+        <p><i>Relevant Coursework:</i> {x.relevant_coursework}</p>
+      </div>
+    );
+  }
   render(){
     return(
       <div className="section">
@@ -29,7 +41,7 @@ class Education extends React.Component{
             {education.map(x =>
               <li>
                 <Card
-                  title = {<div><h2 className="edu_school">{x.school}</h2></div>}
+                  title = {this.render_title(x)}
                   subtitle = {this.render_subtitle(x)}
                   content = {this.render_data(x)}
                 />
