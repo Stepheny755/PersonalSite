@@ -4,14 +4,17 @@ import experiences from '../data/experience.json'
 import Card from './card'
 
 class Experience extends React.Component{
-  render_content(x){
-    return(
-      <div class="card_body">
-        <li key={x.id}>
-          <p>{x.description}</p>
-        </li>
+  render_title(x){
+    var img_include = "";
+    if(x.hasOwnProperty('logo')){
+      img_include = <div class="logo"><img src={require("../res/"+x.logo)} alt={x.logo} width="auto" height="100%"/></div>
+    }
+    return (
+      <div>
+        <span class="card_st_left"><h2>{x.title} - {x.name}</h2></span>
+        <span class="card_st_right">{img_include}</span>
       </div>
-    );
+    )
   }
   render_subtitle(x){
     return(
@@ -23,6 +26,15 @@ class Experience extends React.Component{
       </div>
     )
   }
+  render_content(x){
+    return(
+      <div class="card_body">
+        <li key={x.id}>
+          <p>{x.description}</p>
+        </li>
+      </div>
+    );
+  }
   render(){
     return(
       <div className="section">
@@ -31,7 +43,7 @@ class Experience extends React.Component{
           {experiences.map(x =>
             <li>
               <Card
-                title = {<h2>{x.title} - {x.name}</h2>}
+                title = {this.render_title(x)}
                 subtitle = {this.render_subtitle(x)}
                 content = {this.render_content(x)}
               />
