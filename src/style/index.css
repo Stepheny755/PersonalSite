@@ -162,7 +162,7 @@ a, .navbar-nav, .navbar-light .nav-link {
   right: 25%;
 }
 
-footer {
+/* footer {
   position: fixed;
   background-color: gray;
   bottom: 0;
@@ -170,7 +170,7 @@ footer {
   right: 0;
   padding: 8px;
   text-align: center;
-}
+} */
 
 .logo{
   /* width: 3rem; */
