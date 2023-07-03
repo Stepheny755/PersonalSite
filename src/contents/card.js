@@ -20,8 +20,7 @@ class Card extends React.Component{
     }
     return (
       <div className = "b accordion" onClick={() => this.toggleExpanded()}>
-        {this.props.title}
-
+        <div class="card_title">{this.props.title}</div>
         <AnimatePresence>
           {this.state.expanded && (
             <motion.section
@@ -30,9 +29,12 @@ class Card extends React.Component{
               animate="open"
               exit="collapsed"
               variants={card_variants}
-              transition={{ duration: 0.35}}//, //ease: [0.04, 0.62, 0.23, 0.98] }}
+              transition={{ duration: 0.1}}//, //ease: [0.04, 0.62, 0.23, 0.98] }}
             >
+              <div>
+              {this.props.subtitle}
               {this.props.content}
+              </div>
             </motion.section>
           )}
         </AnimatePresence>

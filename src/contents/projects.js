@@ -7,7 +7,7 @@ import Card from './card'
 class Projects extends React.Component{
   render_data(x){
     return (
-      <div>
+      <div class="card_body">
         <li key={x.id}>
           <p>{x.description}</p>
         </li>
@@ -22,7 +22,7 @@ class Projects extends React.Component{
           {projects.map(x =>
             <li>
               <Card
-                title = {<h4>{x.name} - {x.headline} </h4>}
+                title = {<h2>{x.name} - {x.headline} </h2>}
                 content = {this.render_data(x)}
               />
             </li>
