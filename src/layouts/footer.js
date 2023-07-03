@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleReactFooter from 'simple-react-footer';
+// import SimpleReactFooter from 'simple-react-footer';
 
 class Footer extends React.Component {
     render() {
