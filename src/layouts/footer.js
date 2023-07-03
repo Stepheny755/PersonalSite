@@ -6,11 +6,13 @@ class Footer extends React.Component {
         return (
             <footer>
                 <div>
-                    <a href="https://github.com/Stepheny755" ><i className="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/stephh.yang/" ><i className="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/stephy755" ><i className="fab fa-facebook-f"></i></a>
-                    <a href="https://www.linkedin.com/in/stepheny755/" ><i className="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/stepheny755" ><i className="fab fa-twitter"></i></a>
+                    <h4>
+                    <a href="https://github.com/Stepheny755" className="footer_elem">github</a>
+                    <a href="https://www.instagram.com/stephh.yang/" className="footer_elem">insta</a>
+                    <a href="https://www.facebook.com/stephy755" className="footer_elem">facebook</a>
+                    <a href="https://www.linkedin.com/in/stepheny755/" className="footer_elem">linkedin</a>
+                    <a href="https://neal.fun/password-game/" className="footer_elem">fun</a>
+                    </h4>
                 </div>
             </footer>
         );

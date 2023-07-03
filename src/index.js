@@ -25,12 +25,12 @@ class Main extends React.Component{
 
     return(
       <React.Fragment>
-        <Landing />
+        {/* <Landing /> */}
         <div id = "main">
           <About />
-          <Education/>
+          {/* <Education/>
           <Experience/>
-          <Projects />
+          <Projects /> */}
         </div>
         <Footer />
       </React.Fragment>

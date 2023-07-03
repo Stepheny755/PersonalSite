@@ -7,6 +7,8 @@
 :root{
   --mainback:#222;
   --mainfore:#000000;
+  --textdefault:#0c0e2e;
+  --texthighlight:rgb(46, 143, 241);
 }
 
 .rootelement{
@@ -121,6 +123,7 @@ h4{
 }
 
 p{
+  /* color: var(--textdefault); */
   font-size:2.25rem;
   margin: 0px;
 }
@@ -147,30 +150,10 @@ html{
   background-color: var(--mainback);
 }
 
-a, .navbar-nav, .navbar-light .nav-link {
-  color: #9FFFCB;
-  &:hover { color: white; }
+a {
+  color: black;
+  &:hover { color: var(--texthighlight); }
 }
-.navbar-brand {
-  font-size: 1.4em;
-  color: #9FFFCB;
-  &:hover { color: white; }
-}
-.form-center {
-  position: absolute !important;
-  left: 25%;
-  right: 25%;
-}
-
-/* footer {
-  position: fixed;
-  background-color: gray;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 8px;
-  text-align: center;
-} */
 
 .logo{
   /* width: 3rem; */
@@ -198,4 +181,20 @@ a, .navbar-nav, .navbar-light .nav-link {
   padding-top: 12px;
   clear:both;
   position:relative;
+}
+
+footer {
+  /* position: fixed; */
+  border-top: 1px solid var(--mainfore);
+  background-color: white;
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
+  padding: 8px;
+  text-align: center;
+}
+
+.footer_elem{
+  padding-left: 15px;
+  padding-right: 15px;
 }
