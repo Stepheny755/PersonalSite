@@ -184,12 +184,12 @@ a {
 }
 
 footer {
-  /* position: fixed; */
+  position: fixed;
   border-top: 1px solid var(--mainfore);
   background-color: white;
-  /* bottom: 0;
-  left: 0;
-  right: 0; */
+  bottom: 0;
+  left: 0;  
+  right: 0;
   padding: 8px;
   text-align: center;
 }
