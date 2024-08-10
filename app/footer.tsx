@@ -1,9 +1,9 @@
 
 export default function Footer() {
     return (
-        <footer className="bg-white dark:bg-stone-900">
-            <div className="mx-auto w-full max-w-screen-xl p-4 py-5 lg:py-6">
-                <hr className="my-6 stone-200 sm:mx-auto dark:stone-700 lg:my-8" />
+        <footer className="mt-auto bg-white dark:bg-stone-900">
+            <div className="w-full mx-auto max-w-screen-xl p-4 py-5 lg:py-6 ">
+                <hr className="my-6 stone-200 sm:mx-auto dark:stone-700" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-stone-600 dark:text-stone-300">
                         &copy; {new Date().getFullYear()} <a href="https://stephyang.xyz" className="hover:underline">Stephen Yang</a>
