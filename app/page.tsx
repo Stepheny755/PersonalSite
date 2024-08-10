@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ThemeSwitcher from "./components/themeswitch";
 
 export default function Home() {
   return (
@@ -8,8 +7,13 @@ export default function Home() {
         <p className="">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
-          <ThemeSwitcher />
-
+          asdas
+          dasd
+          asda
+          sdas
+          Dashboard <br></br>
+          a <br></br>
+          some random text here
         </p>
       </div>
     </main>
