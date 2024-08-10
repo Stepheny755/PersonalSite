@@ -8,13 +8,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      'skyblue': '#3bc9f5',
-      'nyanza': '#dceed1',
-      'violet': '#736372',
-      'tearose': '#e2c2c6',
-      'black': '#020202',
-      'grey': '#1C1B22',
+    extends: {
+      colors: {
+        'skyblue': '#3bc9f5',
+        'nyanza': '#dceed1',
+        'violet': '#736372',
+        'tearose': '#e2c2c6',
+        'black': '#020202',
+        'grey': '#1C1B22',
+      },
     },
   },
   plugins: [],
