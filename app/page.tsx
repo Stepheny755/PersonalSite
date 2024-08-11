@@ -29,7 +29,7 @@ export default function Home() {
                 <a href="/docs/parkore.pdf" className="hlink">PARKore: Parallel, Asynchronous, Relaxed K-Core Decomposition</a>
               </li>
               <li className="text-stone-800 dark:text-stone-100">
-                <a href="/docs/ds_in_epilspey.pdf" className="hlink">Dynamical Systems for Epilepsy Prediction</a>
+                <a href="/docs/ds_in_epilepsy.pdf" className="hlink">Dynamical Systems for Epilepsy Prediction</a>
               </li>
             </ul>
             <br></br>
