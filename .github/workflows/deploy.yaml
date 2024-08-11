@@ -15,19 +15,22 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        node-version: [20.x, 22.x]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: checkout
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-  
-    - name: Install dependencies
-      run: npm install
+      - name: setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
     
-    - name: Build
-      run: npm run build
+      - name: dependencies
+        run: npm install -g pnpm
+        run: pnpm i
+        run: pnpm run build
+        
+      - name: test
+        run: pnpm lint
+      
