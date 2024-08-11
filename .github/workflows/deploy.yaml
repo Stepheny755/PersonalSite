@@ -2,13 +2,10 @@ name: CI/CD
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches: 
-      - main
-      - deploy
-
+    branches: [main, deploy]
+    
 jobs:
   build:
     runs-on: ubuntu-22.04
