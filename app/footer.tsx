@@ -3,9 +3,9 @@ export default function Footer() {
     return (
         <footer className="mt-auto bg-l_header dark:bg-d_header">
             <div className="w-full mx-auto max-w-screen-xl p-4 sm:px-6">
-                <hr className="mt-3 mb-4 sm:mx-auto text-gray-600 dark:text-stone-300" />
+                <hr className="mt-3 mb-4 sm:mx-auto border-gray-700 dark:border-stone-50" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-600 dark:text-stone-300">
+                    <span className="text-sm header_txt">
                         &copy; {new Date().getFullYear()} <a href="https://stephyang.xyz" className="hover:underline">Stephen Yang</a>
                     </span>
                     <div className="flex mt-4 sm:justify-between sm:mt-0">
