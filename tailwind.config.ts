@@ -12,12 +12,22 @@ const config: Config = {
       sans: ["Raleway", "sans-serif"],
       heading: ["Poppins", "sans-serif"],
     },
-    extends: {
+    extend: {
       colors: {
-        'skyblue': '#3bc9f5',
-        'nyanza': '#dceed1',
-        'violet': '#736372',
-        'tearose': '#e2c2c6',
+        'tidewater': '#c2e2de',
+        // 'nyanza': '#dceed1',
+        // 'violet': '#736372',
+        'l_header': '#d4def2',
+        'l_body': '#f7f9ff',
+        'd_header': '#3e5684',
+        'd_body': '#0b1732',
+        'lt_header': '',
+        'lt_body': '',
+        'dt_header': '',
+        'dt_body': '',
+
+        // 'gunmetal': '#986F82',
+        // 'dgray': '#50514f',
         // 'black': '#020202',
         // 'grey': '#1C1B22',
       },

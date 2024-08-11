@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className + " bg-l_body dark:bg-d_body"}>
         <Providers>
           <div className="flex flex-col min-h-screen">
             <Header />
