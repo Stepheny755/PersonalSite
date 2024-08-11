@@ -21,12 +21,10 @@ jobs:
       - name: setup
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-    
-      - name: dependencies
-        run: npm install -g pnpm
-        run: pnpm i
-        run: pnpm run build
+          node-version: ${{ matrix.node-version }} 
+      - run: npm install -g pnpm
+      - run: pnpm i
+      - run: pnpm run build
         
       - name: test
         run: pnpm lint
