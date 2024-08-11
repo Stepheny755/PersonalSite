@@ -9,7 +9,7 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} <a href="https://stephyang.xyz" className="hover:underline">Stephen Yang</a>
                     </span>
                     <div className="flex mt-4 sm:justify-between sm:mt-0">
-                        <a href="/resume.pdf" className="text-gray-600 dark:text-stone-200 hover:text-stone-900 dark:hover:text-white">
+                        <a href="/docs/resume.pdf" className="text-gray-600 dark:text-stone-200 hover:text-stone-900 dark:hover:text-white">
                             <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
                                 <g>
                                     <path d="M227.6,58.3L179,9.6c-2.6-2.6-6.1-4-9.8-4H45.1c-11.5,0-20.8,9.3-20.8,20.8v203.3c0,11.5,9.3,20.8,20.8,20.8h165.8   c11.5,0,20.8-9.3,20.8-20.8V68C231.7,64.3,230.3,60.9,227.6,58.3z M221.5,229.6c0,5.8-4.8,10.6-10.6,10.6H45.1   c-5.8,0-10.6-4.8-10.6-10.6V26.4c0-5.8,4.8-10.6,10.6-10.6h124.2c1,0,1.9,0.4,2.6,1.1l48.6,48.6c0.7,0.7,1.1,1.6,1.1,2.6V229.6z" />
@@ -21,6 +21,7 @@ export default function Footer() {
                                     <path d="M168.8,177.7l-22.9-8.1l-17.7,17.7l-17.7-17.7l-22.9,8.1c-3.5,1.2-6.1,4.2-6.8,7.8l-8.1,38.1h111l-8.1-38.1   C174.9,182,172.3,179,168.8,177.7z M85.3,213.4l5.5-25.8c0-0.2,0.1-0.3,0.3-0.3l16.8-6l20.4,20.4l20.4-20.4l16.8,6   c0.1,0.1,0.3,0.2,0.3,0.3l5.5,25.8H85.3z" />
                                 </g>
                             </svg>
+                            <span className="sr-only">Resume</span>
                         </a>
                         <a href="https://github.com/Stepheny755" className="text-gray-600 dark:text-stone-200 hover:text-stone-900 dark:hover:text-white ms-5">
                             <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
