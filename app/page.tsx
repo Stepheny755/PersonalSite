@@ -8,9 +8,9 @@ export default function Home() {
         <div className="container text-stone-600 dark:text-stone-100">
           <h1 className="my-4">Hi!</h1>
           <p className="my-4">My name is Stephen Yang, and welcome to my corner of the internet!</p>
-          <p>I'm interested in mechatronics and operating at the intersection of software engineering and physical systems. I graduated from UofT in computer engineering, and I'm currently working through my Masters of Applied Science under the supervision of Professor Eric Diller, where I focus on the simulation and development of millimeter scale medical microrobots. </p>
-          <p className="my-4">Previously, I worked on FPGA IP Development at Intel and at the UofT Multimedia Lab on ML for computational pathology.</p>
-          <p className="my-4">When I'm free, I enjoy brewing coffee (V60 and Moka), lifting rocks, 3D printing and reading. Feel free to reach out via email!</p>
+          <p className="my-4">I'm interested in mechatronics and operating at the intersection of software engineering and physical systems. I graduated from UofT in computer engineering, and I'm currently working through my Masters of Applied Science under the supervision of Professor Eric Diller, where I focus on the simulation and development of millimeter scale medical microrobots. </p>
+          <p className="my-4">Previously, I worked on FPGA IP Development at Intel, and at the UofT Multimedia Lab on ML for computational pathology.</p>
+          <p className="my-4">When I'm free, I enjoy brewing coffee (V60 and Moka), lifting rocks, 3D printing, taking photos and reading. Feel free to reach out via <a href="mailto:stephy.yang@mail.utoronto.ca" className="underline font-bold">email</a>!</p>
           <p>aaa</p>
           <p>aaa</p>
           <p>aaa</p>

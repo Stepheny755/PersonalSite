@@ -8,6 +8,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Raleway", "sans-serif"],
+      heading: ["Poppins", "sans-serif"],
+    },
     extends: {
       colors: {
         'skyblue': '#3bc9f5',
