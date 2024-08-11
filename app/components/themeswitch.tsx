@@ -14,12 +14,12 @@ export default function ThemeSwitch() {
     if (!mounted) return <>...</>;
 
     if (currentTheme === "dark") {
-        return <SunIcon className="h-6 w-6" onClick={() => setTheme("light")} />;
+        return <SunIcon className="h-6 w-6 text-white" onClick={() => setTheme("light")} />;
     }
 
     if (currentTheme === "light") {
         return (
-            <MoonIcon className="h-6 w-6 text-gray-900" onClick={() => setTheme("dark")} />
+            <MoonIcon className="h-6 w-6 text-stone-600" onClick={() => setTheme("dark")} />
         );
     }
 }
