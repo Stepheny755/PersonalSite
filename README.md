@@ -15,4 +15,5 @@ pnpm run dev
 
 ```
 pnpm run build
+# static export enabled, results in /out
 ```
