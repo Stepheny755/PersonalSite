@@ -1,4 +1,3 @@
-
 export default function Footer() {
     return (
         <footer className="mt-auto bg-l_header dark:bg-d_header">

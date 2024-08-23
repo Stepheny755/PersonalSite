@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
               In my free time, I enjoy brewing coffee (V60 and Moka), lifting rocks, 3D printing, taking <a href="https://www.instagram.com/stephyangshoots" className="hblink">photos</a> and <a href="https://app.thestorygraph.com/profile/stepheny" className="hblink">reading</a>.
             </p>
             <p>
-              Feel free to reach out via <a href="mailto:stephy.yang@mail.utoronto.ca" className="hblink">email</a>. If you&apos;re looking for course notes I took during my time at the University of Toronto, check out <a href="https://notes.stephyang.xyz" className="hblink">notes.stephyang.xyz</a>.
+              Feel free to reach out via <a href="mailto:stephy.yang@mail.utoronto.ca" className="hblink">email</a>. If you&apos;re looking for course notes I took during my time at the University of Toronto, check out <Link href="/notes" className="hblink">my notes page</Link>.
             </p>
             {/* <h1 className="mt-10 text-2xl">publications</h1> */}
             <h1 className="mt-10 text-2xl">links</h1>
