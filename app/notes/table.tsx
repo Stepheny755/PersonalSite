@@ -5,7 +5,7 @@ import { Accordion, AccordionItem } from "@nextui-org/accordion";
 export function Table({ fns }) {
   return (
     <Accordion selectionMode="multiple" defaultExpandedKeys={["2", "3", "4", "5"]}>
-      <AccordionItem key="2" title="200">
+      <AccordionItem key="2" aria-label="Accordion 2" title="200" className="">
         <ul>
           {fns[2].map(fn => (
             <li key={fn}>
@@ -16,7 +16,7 @@ export function Table({ fns }) {
           ))}
         </ul>
       </AccordionItem>
-      <AccordionItem key="3" title="300">
+      <AccordionItem key="3" aria-label="Accordion 3" title="300">
         <ul>
           {fns[3].map(fn => (
             <li key={fn}>
@@ -27,7 +27,7 @@ export function Table({ fns }) {
           ))}
         </ul>
       </AccordionItem>
-      <AccordionItem key="4" title="400">
+      <AccordionItem key="4" aria-label="Accordion 4" title="400">
         <ul>
           {fns[4].map(fn => (
             <li key={fn}>
@@ -38,7 +38,7 @@ export function Table({ fns }) {
           ))}
         </ul>
       </AccordionItem>
-      <AccordionItem key="5" title="500">
+      <AccordionItem key="5" aria-label="Accordion 5" title="500">
         <ul>
           {fns[5].map(fn => (
             <li key={fn}>

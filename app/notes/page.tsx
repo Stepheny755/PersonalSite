@@ -44,13 +44,3 @@ export default async function Notes() {
     </div >
   );
 }
-
-{/* <ul>
-                  {sortedFilenames[1].map(fn => (
-                    <li key={fn}>
-                      <a href={`/notes/${fn}`} className="hlink">
-                        {fn.replace(/\.pdf$/, '').replace(/_/g, ' ')}
-                      </a>
-                    </li>
-                  ))}
-                </ul> */}
