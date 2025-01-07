@@ -16,7 +16,6 @@ export default function ThemeSwitch({ children }: { children: React.ReactNode })
     if (currentTheme === "dark") {
         return <SunIcon className="h-6 w-6 text-white" onClick={() => setTheme("light")} />;
     }
-
     if (currentTheme === "light") {
         return (
             <MoonIcon className="h-6 w-6 text-stone-600" onClick={() => setTheme("dark")} />
