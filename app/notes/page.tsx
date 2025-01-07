@@ -31,7 +31,6 @@ export default async function Notes() {
     }
   });
 
-
   return (
     <div className="bg-l_body dark:bg-d_body">
       <div className="mx-auto w-full max-w-screen-xl px-2 lg:px-22 md:px-16 sm:px-10">

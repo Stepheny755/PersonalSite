@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import RootLayout from './components/layout';
 
-export default function NotFound() {
+const NotFound = () => {
   return (
     <div className="bg-l_body dark:bg-d_body">
       <div className="mx-auto w-full max-w-screen-xl px-2 lg:px-22 md:px-16 sm:px-10">
@@ -17,3 +18,9 @@ export default function NotFound() {
     </div>
   )
 }
+
+NotFound.getLayout = (page) => {
+  return <RootLayout>{page}</RootLayout>
+};
+
+export default NotFound
