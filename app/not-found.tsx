@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import RootLayout from './components/layout';
+import RootLayout from './(primary)/layout';
 
 const NotFound = () => {
   return (
