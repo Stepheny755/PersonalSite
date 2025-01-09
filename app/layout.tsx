@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { Providers } from "./providers";
-import Footer from "./footer";
-import Header from "./header";
+import { Providers } from "./components/providers";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Stephen's Personal Site",
 };
 
-export default function RootLayout({
+export default function PrimaryLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
