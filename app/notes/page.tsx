@@ -4,7 +4,7 @@ import { Table } from './table';
 
 export default async function Notes() {
 
-  const notesDirectory = path.join(process.cwd(), 'public/notes');
+  const notesDirectory = path.join(process.cwd(), 'public/docs/notes');
   const filenames = await fs.readdir(notesDirectory);
 
   const sortedFilenames: string[][] = [];
