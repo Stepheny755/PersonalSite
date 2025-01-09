@@ -5,7 +5,7 @@ import Accordion from "../components/accordion";
 function Listfns(fns: string[][], index: number) {
   return (fns[index].map(fn => (
     <li key={fn}>
-      <a href={`/notes/${fn}`} className="hlink">
+      <a href={`/docs/notes/${fn}`} className="hlink">
         {fn.replace(/\.pdf$/, '').replace(/_/g, ' ')}
       </a>
     </li>
