@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Accordion({ title, children }) {
+export default function Accordion({ title, children }: any) {
   const [open, setOpen] = useState(true);
   return (
     <div>

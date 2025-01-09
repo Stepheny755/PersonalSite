@@ -12,7 +12,7 @@ function Listfns(fns: string[][], index: number) {
   )));
 }
 
-export function Table({ fns }) {
+export function Table({ fns }: any) {
   return (
     <div className="mt-10 mb-10">
       <hr className="mt-3 mb-4 sm:mx-auto border-gray-700 dark:border-stone-50" />
