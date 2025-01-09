@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import PrimaryLayout from "./(primary)/layout";
+
 export default function NotFound() {
   return (
     <div className="bg-l_body dark:bg-d_body">
@@ -15,13 +15,5 @@ export default function NotFound() {
         </div>
       </div>
     </div>
-  )
-}
-
-NotFound.getLayout = (page: any) => {
-  return (
-    <PrimaryLayout>
-      {page}
-    </PrimaryLayout>
   )
 }
