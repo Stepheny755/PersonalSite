@@ -15,6 +15,9 @@ export default function Header() {
                             <li className='inline'>
                                 <Link href="/portfolio">portfolio</Link>
                             </li>
+                            <li className='inline'>
+                                <Link href="/notes">notes</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="w-auto inline float-right">
